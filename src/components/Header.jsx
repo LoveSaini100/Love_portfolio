@@ -66,7 +66,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
         {/* Download resume */}
         <a
-          href="/LOVE_Resume.pdf"
+          href="/Love_portfolio/LOVE_Resume.pdf"
           download
           title="Download resume"
           className="flex items-center gap-1 p-2 bg-gray-600 text-gray-100 dark:bg-gray-200 dark:text-black dark:hover:bg-purple-900 hover:bg-purple-900 hover:text-white dark:hover:text-white rounded-md transition text-sm"
