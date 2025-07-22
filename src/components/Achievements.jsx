@@ -5,14 +5,14 @@ const achievements = [
     title: "Web Development Internship",
     platform: "Betch Walleh",
     date: "October 2023 - November 2023",
-    link: "/btech walleh.jpg",
+    link: "/Love_portfolio/btech walleh.jpg",
   },
   
   {
     title: "Frontend Development Internship",
     platform: "CodTech IT Solutions",
     date: "July 2024 - August 2024",
-    link: "/codtech.jpg", 
+    link: "/Love_portfolio/codtech.jpg", 
   },
 ];
 
