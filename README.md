@@ -1,12 +1,63 @@
-# React + Vite
+# 💼 Love Saini - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using **React** and **Vite** and deployed on **GitHub Pages**.
+It showcases my skills, projects, education, achievements, internships, and contact information — all in a clean, responsive, and interactive layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🌐 **Visit here**: [https://LoveSaini100.github.io/Love_portfolio](https://LoveSaini100.github.io/Love_portfolio)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Technologies Used
+
+- ⚛️ React.js
+- ⚡ Vite
+- 🎨 Tailwind CSS / 
+- 📦 Git & GitHub
+- 🌐 GitHub Pages for Deployment
+
+  
+---
+
+## 🧩 Features
+
+- 🔄 Fully responsive layout
+- 🌓 Light/Dark mode toggle
+- 📚 Education, Skills, Projects, Achievements, Internships
+- ✉️ contact section
+- 📸 Image assets and optimized build
+- 🚀 Live on GitHub Pages
+
+---
+
+## 📦 Installation & Development
+
+```bash
+# Clone the repo
+git clone https://github.com/LoveSaini100/Love_portfolio.git
+cd Love_portfolio
+
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+
+---
+
+
+
+## 📬 Contact
+If you'd like to connect, reach me via:
+
+Email: sainilove910@gamil.com
+
+LinkedIn: linkedin.com/in/love-saini-b877aa277
+
+GitHub: LoveSaini100
+
+
+
