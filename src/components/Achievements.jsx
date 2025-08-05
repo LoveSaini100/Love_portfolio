@@ -14,6 +14,12 @@ const achievements = [
     date: "July 2024 - August 2024",
     link: "/codtech.jpg", 
   },
+  {
+    title: "Frontend Development Internship",
+    platform: "PRODESK IT & ENGINEERING SERVICES",
+    date: "June 2025 - July 2025",
+    link: "/prodesk.png", 
+  },
 ];
 
 export default function Achievements() {

@@ -22,6 +22,17 @@ const internships = [
       
     ],
   },
+  {
+    title: "FrontEnd Development Intern",
+    platform: "PRODESK IT & ENGINEERING SERVICES",
+    date: "June 2025 - July 2025",
+    description: [
+      "Deployed personal portfolio via GitHub Pages during the internship.",
+      "Gained hands-on experience with Git, version control, and site hosting.",
+      "Applied front-end skills like React and Tailwind to build and optimize real-world projects."
+      
+    ],
+  },
 ];
 
 
@@ -43,7 +54,7 @@ export default function Internship() {
               <span className="text-gray-700 dark:text-purple-400">{intern.title}</span>
             </h2>
 
-          <p className="text-sm text-gray-700 dark:ext-gray-300 italic">{intern.platform}</p>
+          <p className="text-sm text-gray-700 dark:text-gray-300 italic">{intern.platform}</p>
           <p className="text-xs text-grey-900 dark:text-gray-400 mb-4">{intern.date}</p>
 
           <ul className=" list-inside list-none space-y-1 text-sm text-gray-800 dark:text-gray-200 leading-relaxed pl-1">
