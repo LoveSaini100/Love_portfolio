@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPalette, FaImages, FaTicketAlt } from "react-icons/fa";
+import { FaPalette, FaImages, FaTicketAlt, FaUserFriends } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -11,21 +11,21 @@ const projects = [
     repoLink: "https://github.com/LoveSaini100/CraftHeaven",
     icon: FaPalette,
   },
-  
+
   {
     title: "Photo Gallary App",
     description:
       " A dynamic platform for browsing categorized photos and uploading personal images with seamless user interaction.",
-    tags: ["React", "TailWind","Unsplash API"],
+    tags: ["React", "TailWind", "Unsplash API"],
     repoLink: "https://github.com/LoveSaini100/photo-gallary-app",
     icon: FaImages,
   },
   {
-    title: "Ticket Booking ",
-    description: " A complete cinema booking platform where users can select movies, choose showtimes, pick seats, and confirm reservations.",
-    tags: ["React", "tailwind"],
-    repoLink: "https://github.com/LoveSaini100/ticketBooking",
-    icon: FaTicketAlt,
+    title: "Student–Teacher Appointment Booking System",
+    description: "A web application facilitating appointment scheduling between students and teachers, featuring user authentication and data management.",
+    tags: ["Html", "Css", "JavaScript", "Firebase"],
+    repoLink: "https://github.com/LoveSaini100/student-teacher-appointment-booking",
+    icon: FaUserFriends,
   },
 ];
 
@@ -40,6 +40,14 @@ export default function Projects() {
         {projects.map((p) => (
           <ProjectCard key={p.title} {...p} />
         ))}
+      </div>
+      <div className="flex justify-center mt-6">
+        <a
+          href="https://github.com/LoveSaini100"
+          className="inline-block bg-gray-700 text-white dark:bg-gray-100 dark:text-gray-900 px-4 py-2 rounded-lg hover:underline transition"
+        >
+          View More →
+        </a>
       </div>
     </section>
   );

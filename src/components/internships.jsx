@@ -12,7 +12,7 @@ const internships = [
     ],
   },
   {
-    title: "FrontEnd Development Intern",
+    title: "FrontEnd Web Development Intern",
     platform: "CODTECH IT SOLUTIONS",
     date: "July 2024 - August 2024",
     description: [
@@ -23,13 +23,24 @@ const internships = [
     ],
   },
   {
-    title: "FrontEnd Development Intern",
+    title: "FrontEnd Web Development Intern",
     platform: "PRODESK IT & ENGINEERING SERVICES",
     date: "June 2025 - July 2025",
     description: [
       "Deployed personal portfolio via GitHub Pages during the internship.",
       "Gained hands-on experience with Git, version control, and site hosting.",
       "Applied front-end skills like React and Tailwind to build and optimize real-world projects."
+      
+    ],
+  },
+  {
+    title: "FrontEnd Web Development Intern",
+    platform: "Unified Mentors Private Limited",
+    date: "June 2025 - Sep 2025",
+    description: [
+      "Developed full-featured web projects including Student–Teacher Appointment System and E-Gram Panchayat Portal using HTML, CSS, Bootstrap, JavaScript, and Firebase.",
+      "Implemented core functionalities such as user authentication, data management, and responsive layouts to enhance accessibility and usability.",
+      "Strengthened front-end development skills and learned best practices for building and deploying real-world web applications."
       
     ],
   },

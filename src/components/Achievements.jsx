@@ -5,21 +5,27 @@ const achievements = [
     title: "Web Development Internship",
     platform: "Betch Walleh",
     date: "October 2023 - November 2023",
-    link: "/btech walleh.jpg",
+    link: "/Love_portfolio/btech walleh.jpg",
   },
   
   {
     title: "Frontend Development Internship",
     platform: "CodTech IT Solutions",
     date: "July 2024 - August 2024",
-    link: "/codtech.jpg", 
+    link: "/Love_portfolio/codtech.jpg", 
   },
   {
     title: "Frontend Development Internship",
     platform: "PRODESK IT & ENGINEERING SERVICES",
     date: "June 2025 - July 2025",
-    link: "/prodesk.png", 
+    link: "/Love_portfolio/prodesk.png", 
   },
+  {
+    title: "Frontend Development Internship",
+    platform: "Unified Mentors Private Limited",
+    date: "June 2025 - September 2025",
+    link: "/Love_portfolio/Unified_mentors.png", 
+  }
 ];
 
 export default function Achievements() {
@@ -31,7 +37,7 @@ export default function Achievements() {
         Achievements
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-8 px-4">
+      <div className="flex flex-wrap justify-center gap-4 px-4">
         {achievements.map((achieve, index) => (
           <div
             key={index}
