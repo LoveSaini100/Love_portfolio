@@ -1,52 +1,88 @@
 import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectCard({
   title,
   description,
   tags = [],
   repoLink,
-  icon: Icon,   
+  liveLink,
+  icon: Icon,
 }) {
   return (
-    <div className="relative w-full sm:w-80 md:w-72 lg:w-80 p-[1px] rounded-xl  
-    border-2 hover:shadow-lg
-    dark:bg-gradient-to-br from-purple-600/80 via-indigo-700/30 to-transparent dark:hover:scale-[1.02] transition-transform duration-300">
-      <div className="h-full rounded-xl bg-white dark:bg-gray-800/80 backdrop-blur-md px-5 py-6 flex flex-col">
-        {/* icon in top‑left */}
-        {Icon && (
-          <div className="text-3xl text-gray-800 dark:text-purple-400 mb-4">
-            <Icon />
-          </div>
-        )}
+    <div className="group relative flex flex-col justify-between h-full rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/80 backdrop-blur-md hover:border-purple-500/50 dark:hover:border-purple-550/40 hover:-translate-y-1.5 hover:shadow-[0_15px_30px_-10px_rgba(168,85,247,0.15)] dark:hover:shadow-[0_15px_30px_-10px_rgba(168,85,247,0.05)] transition-all duration-350 overflow-hidden">
+      
+      {/* Visual background gradient overlay */}
+      <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-purple-500/0 via-indigo-500/0 to-pink-500/0 group-hover:from-purple-500/10 group-hover:via-indigo-550/5 group-hover:to-pink-500/5 -z-10 transition-all duration-500" />
 
-        <h3 className="text-lg font-semibold text-grey-900 dark:text-white">{title}</h3>
-        <p className="text-sm text-grey-900 dark:text-gray-300 mt-1 flex-grow">{description}</p>
+      {/* Card Header (Mac IDE style) */}
+      <div className="flex items-center justify-between px-5 py-3 border-b border-slate-100 dark:border-slate-850 bg-slate-50/50 dark:bg-slate-950/20">
+        <div className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+        </div>
+        <span className="text-[10px] font-mono text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+          {liveLink ? "Deployment" : "Repository"}
+        </span>
+      </div>
 
-        {/* tech badges */}
-        <div className="flex gap-2 flex-wrap mt-4">
+      {/* Content */}
+      <div className="p-6 flex-grow flex flex-col">
+        {/* Icon & Title */}
+        <div className="flex items-center gap-3.5 mb-3.5">
+          {Icon && (
+            <div className="p-3 bg-purple-500/10 dark:bg-purple-500/15 text-purple-600 dark:text-purple-400 rounded-xl text-xl">
+              <Icon />
+            </div>
+          )}
+          <h3 className="text-lg font-bold text-slate-800 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+            {title}
+          </h3>
+        </div>
+
+        {/* Description */}
+        <p className="text-sm text-slate-600 dark:text-slate-350 leading-relaxed flex-grow">
+          {description}
+        </p>
+
+        {/* Tech Badges */}
+        <div className="flex flex-wrap gap-1.5 mt-5">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="text-[11px] px-2 py-[2px] rounded-full bg-gray-700 text-gray-200"
+              className="text-[10px] font-semibold font-mono px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 border border-slate-200/40 dark:border-slate-700/30"
             >
               {tag}
             </span>
           ))}
         </div>
+      </div>
 
-        {/* action buttons */}
-        <div className="flex gap-3 mt-5">
-          {repoLink && (
-            <a
-              href={repoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 text-center text-xs border border-gray-500 rounded-md py-1 hover:bg-gray-600 hover:text-white transition-colors"
-            >
-              Repo
-            </a>
-          )}
-        </div>
+      {/* Action Footer */}
+      <div className="px-6 pb-6 pt-2 flex gap-3">
+        {repoLink && (
+          <a
+            href={repoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/60 dark:hover:bg-slate-800/100 border border-slate-200/50 dark:border-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-xl font-medium text-xs transition-all duration-300"
+          >
+            <FaGithub className="text-sm" />
+            <span>GitHub</span>
+          </a>
+        )}
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-650 hover:from-purple-550 hover:to-indigo-550 text-white rounded-xl font-medium text-xs transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+          >
+            <span>Live Link</span>
+            <FaExternalLinkAlt className="text-[9px]" />
+          </a>
+        )}
       </div>
     </div>
   );

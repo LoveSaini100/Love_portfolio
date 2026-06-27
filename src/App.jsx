@@ -12,20 +12,30 @@ function App() {
   const [darkMode, setDarkMode] = useState(true); // ✅ start in dark mode
 
   useEffect(() => {
-    // This applies or removes the "dark" class globally
+    // Apply "dark" class to the document node
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen w-screen   transition-colors duration-300 bg-white text-black dark:bg-gray-900 dark:text-white">
-      <div className="w-full mx-auto ">
+    <div className="min-h-screen w-full transition-colors duration-500 bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 relative overflow-hidden bg-grid-pattern flex flex-col">
+      {/* Ambient background glows */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/10 dark:bg-purple-600/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-[35%] left-[-100px] w-[600px] h-[600px] bg-indigo-500/5 dark:bg-indigo-600/5 rounded-full blur-[150px] pointer-events-none -z-10" />
+      <div className="absolute bottom-[10%] right-[-100px] w-[500px] h-[500px] bg-pink-500/5 dark:bg-pink-600/5 rounded-full blur-[130px] pointer-events-none -z-10" />
+
+      {/* Page Contents */}
+      <div className="w-full flex-grow flex flex-col">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Education />
-        <Skills />
-        <Projects />
-        <Internship />
-        <Achievements />
-        <Contact />
+        
+        <main className="w-full flex-grow">
+          <Education />
+          <Skills />
+          <Projects />
+          <Internship />
+          <Achievements />
+          <Contact />
+        </main>
+
         <Footer />
       </div>
     </div>
