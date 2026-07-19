@@ -147,17 +147,17 @@ export default function Header({ darkMode, setDarkMode }) {
         )}
       </header>
 
-      {/* ──────────────────── Hero Section ──────────────────── */}
+      {/* ──────────────────── Hero Section ────────────────────
       <section
         id="about"
-        className="relative w-full max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-28 md:pb-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+        className="relative w-full max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-10 md:pb-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
       >
-        {/* Intro text */}
+        
         <div className="flex-1 text-center md:text-left space-y-6 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-500/10 dark:bg-purple-400/10 rounded-full border border-purple-500/20 dark:border-purple-400/20 text-purple-700 dark:text-purple-300 text-xs sm:text-sm font-semibold tracking-wide uppercase">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             Available for Hire 
-          </div>
+          </div> 
 
           <div className="space-y-3">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
@@ -167,7 +167,6 @@ export default function Header({ darkMode, setDarkMode }) {
               </span>
             </h1>
 
-            {/* Dynamic Typing Title */}
             <div className="h-10 text-xl sm:text-2xl font-bold text-slate-600 dark:text-slate-400 flex items-center justify-center md:justify-start">
               <span>I'm a&nbsp;</span>
               <span className="text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 dark:from-indigo-400 dark:to-purple-400 bg-clip-text border-r-2 border-purple-500 dark:border-purple-400 pr-1.5 animate-pulse">
@@ -176,14 +175,13 @@ export default function Header({ darkMode, setDarkMode }) {
             </div>
           </div>
 
-          <p className="text-slate-600 dark:text-slate-200 text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-200 text-base sm:text-lg text-justify mx-auto md:mx-0 leading-relaxed">
             I am a passionate Frontend Developer who loves crafting beautiful,
             interactive, and responsive user interfaces. I enjoy solving complex UI
             challenges and mastering modern web technologies. My goal is to create
             seamless, engaging, and high-performance digital experiences.
           </p>
 
-          {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
             <a
               href="#contact"
@@ -201,7 +199,6 @@ export default function Header({ darkMode, setDarkMode }) {
             </a>
           </div>
 
-          {/* Social icons */}
           <div className="flex justify-center md:justify-start items-center gap-5 pt-4 text-2xl">
             <a
               href="https://github.com/LoveSaini100"
@@ -242,7 +239,6 @@ export default function Header({ darkMode, setDarkMode }) {
           </div>
         </div>
 
-        {/* Profile photo container */}
         <div className="flex-1 flex justify-center items-center animate-float">
           <div className="relative group w-80 h-80 sm:w-96 sm:h-96 md:w-full md:h-100">         
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-650 via-indigo-600 to-pink-500 rounded-xl opacity-70 blur-sm group-hover:blur-md transition-all duration-500 animate-spin-slow" />
@@ -256,7 +252,7 @@ export default function Header({ darkMode, setDarkMode }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

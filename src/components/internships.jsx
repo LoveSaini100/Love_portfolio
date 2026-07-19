@@ -3,23 +3,31 @@ import { FaBriefcase } from "react-icons/fa";
 
 const internships = [
   {
-    title: "Web Development Intern",
-    platform: "BTECH WALLEH",
-    date: "Oct 2023 - Nov 2023",
+    title: "FrontEnd Web Developer",
+    platform: "ERT Tech Pro, Roorkee",
+    date: "March 2026 - Present",
     description: [
-      "Developed reusable UI components using HTML, CSS and JavaScript.",
-      "Assisted in building mobile-friendly web pages using responsive design principles.",
-      "Participated in daily stand-ups and contributed to code reviews and testing.",
+      "Contributing to the development of robust web applications.",
+      "Collaborating with cross-functional teams to deliver high-quality software solutions.",
+    ],
+  },
+  {
+    title: "Web Development Intern",
+    platform: "Digital In App, Dehradun",
+    date: "Jan 2026 - March 2026",
+    description: [
+      "Assisted in developing and maintaining web applications.",
+      "Gained hands-on experience in modern web development technologies.",
     ],
   },
   {
     title: "FrontEnd Web Development Intern",
-    platform: "CODTECH IT SOLUTIONS",
-    date: "July 2024 - August 2024",
+    platform: "Unified Mentors Private Limited",
+    date: "June 2025 - Sep 2025",
     description: [
-      "Built responsive user interfaces using HTML, CSS, and Tailwind CSS.",
-      "Collaborated with backend developers to integrate RESTful APIs.",
-      "Applied Git for version control and team collaboration on GitHub.",
+      "Developed full-featured web projects including Student–Teacher Appointment System and E-Gram Panchayat Portal using HTML, CSS, Bootstrap, JavaScript, and Firebase.",
+      "Implemented core functionalities such as user authentication, data management, and responsive layouts to enhance accessibility and usability.",
+      "Strengthened front-end development skills and learned best practices for building and deploying real-world web applications.",
     ],
   },
   {
@@ -34,12 +42,22 @@ const internships = [
   },
   {
     title: "FrontEnd Web Development Intern",
-    platform: "Unified Mentors Private Limited",
-    date: "June 2025 - Sep 2025",
+    platform: "CODTECH IT SOLUTIONS",
+    date: "July 2024 - August 2024",
     description: [
-      "Developed full-featured web projects including Student–Teacher Appointment System and E-Gram Panchayat Portal using HTML, CSS, Bootstrap, JavaScript, and Firebase.",
-      "Implemented core functionalities such as user authentication, data management, and responsive layouts to enhance accessibility and usability.",
-      "Strengthened front-end development skills and learned best practices for building and deploying real-world web applications.",
+      "Built responsive user interfaces using HTML, CSS, and Tailwind CSS.",
+      "Collaborated with backend developers to integrate RESTful APIs.",
+      "Applied Git for version control and team collaboration on GitHub.",
+    ],
+  },
+  {
+    title: "Web Development Intern",
+    platform: "BTECH WALLEH",
+    date: "Oct 2023 - Nov 2023",
+    description: [
+      "Developed reusable UI components using HTML, CSS and JavaScript.",
+      "Assisted in building mobile-friendly web pages using responsive design principles.",
+      "Participated in daily stand-ups and contributed to code reviews and testing.",
     ],
   },
 ];

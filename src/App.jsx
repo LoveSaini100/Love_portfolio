@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
+import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
@@ -28,6 +29,7 @@ function App() {
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         
         <main className="w-full flex-grow">
+          <Hero />
           <Education />
           <Skills />
           <Projects />

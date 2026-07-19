@@ -1,11 +1,10 @@
 import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProjectCard({
   title,
   description,
   tags = [],
-  repoLink,
   liveLink,
   icon: Icon,
 }) {
@@ -42,7 +41,7 @@ export default function ProjectCard({
         </div>
 
         {/* Description */}
-        <p className="text-sm text-slate-600 dark:text-slate-350 leading-relaxed flex-grow">
+        <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-grow">
           {description}
         </p>
 
@@ -61,23 +60,12 @@ export default function ProjectCard({
 
       {/* Action Footer */}
       <div className="px-6 pb-6 pt-2 flex gap-3">
-        {repoLink && (
-          <a
-            href={repoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/60 dark:hover:bg-slate-800/100 border border-slate-200/50 dark:border-slate-700/50 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-xl font-medium text-xs transition-all duration-300"
-          >
-            <FaGithub className="text-sm" />
-            <span>GitHub</span>
-          </a>
-        )}
         {liveLink && (
           <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-650 hover:from-purple-550 hover:to-indigo-550 text-white rounded-xl font-medium text-xs transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+            className="flex-1 flex items-center justify-center gap-2 py-2.5 bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-550 hover:to-indigo-650 text-white rounded-xl font-medium text-xs transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
           >
             <span>Live Link</span>
             <FaExternalLinkAlt className="text-[9px]" />
